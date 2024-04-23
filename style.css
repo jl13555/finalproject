@@ -1,0 +1,140 @@
+@font-face { font-family: GG Sans Medium; src: url('ggsansmedium.ttf'); } 
+@font-face { font-family: GG Sans Regular; src: url('ggsansregular.ttf'); } 
+@font-face { font-family: GG Sans Bold; src: url('ggsansbold.ttf'); } 
+
+body{
+	margin: 0px;
+	font-family: GG Sans Regular;
+	background: #2E3035;
+}
+
+a{
+	text-decoration: none;
+	color: #F2F3F5;
+}
+
+.grid{
+	display: grid;
+	height: 100vh;
+	width: 100vw;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr 11fr;
+	grid-template-areas: 
+		"title pageName"
+		"nav content"
+}
+
+.siteName{
+	color: #F2F3F5;
+	background-color: #2B2D31;
+	grid-area: title;
+	padding: 1.5vw;
+	font-size: 2vw;
+	font-family: GG Sans Bold;
+	border-bottom: 2px solid #1F2124;
+	text-align: left;
+	display: flex;
+	align-items: center;
+
+	}
+
+.navBar{
+	background-color: #2B2D31;
+	color: #949BA4;
+	grid-area: nav;
+	font-family: GG Sans Medium;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.navLink{
+	color: #F2F3F5;
+	font-family: GG Sans Medium;
+	padding: 5px;
+	padding-left: 15px;
+	display: flex;
+	align-items: center;
+	font-size: 1.5vw;
+	border-radius: 5px;
+}
+
+.navLink:hover{
+	background-color: #35373C;
+}
+
+#textChannel{
+	display: flex;
+	align-items: center;
+	font-size: 1.5vw;
+	gap: 10px;
+}
+
+#greaterthan{
+	height: 0.5vw;
+}
+
+#pageTitle{
+	grid-area: pageName;
+	display: flex;
+	align-items: center;
+	padding: 1vw;
+	font-size: 2vw;
+	font-family: GG Sans Bold;
+	border-bottom: 2px solid #1F2124;
+	text-align: left;
+	color: #F2F3F5;
+}
+
+#hashtag{
+	height: 4vw;
+	width: auto;
+}
+
+#smallhashtag{
+	height: 1.75vw;
+}
+
+.element{
+	padding: 50px;
+	padding-bottom: 0px;
+	padding-top: 30px;
+	display: flex;
+	gap: 20px;
+}
+
+.sectionName{
+	font-family: GG Sans Medium;
+	font-size: 1.5vw;
+	padding-bottom: 7.5px;
+}
+
+.icon{
+	height: 4.2vw;
+}
+
+.bodyText{
+	font-family: GG Sans Regular;
+	font-size: 1.4vw;
+	color: white;
+}
+
+.imageDiv{
+	padding-top: 10px;
+}
+
+.attachedImage{
+	height: 15vw;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.attachedImage:hover{
+	opacity: 0.7;
+}
+
+#content{
+	overflow: auto;
+	padding-bottom: 5vw;
+}
