@@ -103,7 +103,7 @@ let pageCollection = [
 	{
 		"sectionName" : "What's Wrong With That?",
 		"category": "revenue",
-		"bodyText" : "Initial user feedback on the rollout suggested that the ads appear to be minimally intrusive, with many understanding their necessity given that the platform operates on a freemium model. However, the streaming aspect of the ad campaign feels wrong with many users are reluctant to have their friendships monetized or treated as products. \n\nThe real crisis within the Discord community, however, is Discord's contradiction of its own history of claiming it had no intention to run ads like other companies that offer software and social networking services. This has worried many users as it seems Discord's priorities are shifting away from its original values and towards a more profit-driven approach, leaving many wondering if more changes will come at the expense of Discord's userbase and original principles.",
+		"bodyText" : "Initial user feedback on the rollout suggested that the ads appear to be minimally intrusive, with many understanding their necessity given that the platform operates on a freemium model. However, the streaming aspect of the ad campaign feels wrong with many users reluctant to have their friendships monetized or treated as products. \n\nThe real crisis within the Discord community, however, is Discord's contradiction of its own history of claiming it had no intention to run ads like other companies that offer software and social networking services. This has worried many users as it seems Discord's priorities are shifting away from its original values and towards a more profit-driven approach, leaving many wondering if more changes will come at the expense of Discord's userbase and original principles.",
 		"attachedImage" : "n/a"
 	},
 	{
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		page4.style.backgroundColor = "#404249";
 	}
 	else if(page == "concerns"){
-		pageTitle.innerText = "other-concerns";
+		pageTitle.innerText = "data-concerns";
 		page5.style.backgroundColor = "#404249";
 	}
 	else{
