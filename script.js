@@ -106,6 +106,38 @@ let pageCollection = [
 		"bodyText" : "Initial user feedback on the rollout suggested that the ads appear to be minimally intrusive, with many understanding their necessity given that the platform operates on a freemium model. However, the streaming aspect of the ad campaign feels wrong with many users are reluctant to have their friendships monetized or treated as products. \n\nThe real crisis within the Discord community, however, is Discord's contradiction of its own history of claiming it had no intention to run ads like other companies that offer software and social networking services. This has worried many users as it seems Discord's priorities are shifting away from its original values and towards a more profit-driven approach, leaving many wondering if more changes will come at the expense of Discord's userbase and original principles.",
 		"attachedImage" : "n/a"
 	},
+	{
+		"sectionName" : "OpenFeint",
+		"category": "concerns",
+		"bodyText" : "OpenFeint, founded by Citron before working on Discord, was sued with allegations including computer fraud, invasion of privacy and breach of contract. According the lawsuit, OpenFeint's business plan included accessing and disclosing personal information without authorization to developers, advertising networks and web-analytic vendors that market mobile applications - essentially selling user data.",
+		"attachedImage" : "n/a"
+	},
+	{
+		"sectionName" : "But Why Does That Matter?",
+		"category": "concerns",
+		"bodyText" : "The short answer is: Tencent. Tencent owns 38% of Discord, by no means making it a small stakeholder. Tencent’s ties to the Chinese Communist Party are no secret and it is well established that Chinese companies are required to share information with China’s intelligence services under legislation like the National Intelligence Law. As such, Tencent’s large stake in Discord and Citron’s past handling of user data poses significant data privacy concerns for the average user.",
+		"attachedImage" : "n/a"
+	},
+	{
+		"sectionName" : "Discord’s Privacy Policy",
+		"category": "concerns",
+		"bodyText" : "While Discord’s Privacy Policy states that they “make money from paid subscriptions and the sale of digital (and sometimes physical) goods, not from selling your personal information to third parties”, the more worrying statement they make in that same Privacy Policy is: \"We may provide information to our related companies, including parents, affiliates, subsidiaries, and other companies under common control and ownership\". Given Discord’s relationship with Tencent, even if Discord does not sell user data, it seems that Tencent could have access to it.",
+		"attachedImage" : {
+			"image1": "tencent.jpeg",
+			"image2" : "n/a"
+		}
+	},
+	{
+		"sectionName" : "Even If Discord’s Data is Secure…",
+		"category": "concerns",
+		"bodyText" : "Like Tencent's ownership TikTok, its stake in Discord could create an avenue of government scrutiny akin to the investigations surrounding TikTok. Just as concerns over data privacy and national security prompted hearings and regulatory actions for TikTok, similar apprehensions may arise for Discord as both platforms amass vast amounts of user data, raising questions about how it's utilized and safeguarded. As governments increasingly focus on tech companies' practices, Discord's association with Tencent may be a cause for concern.",
+		"attachedImage" : {
+			"image1" : "tiktoklogo.png",
+			"image2" : "tiktok.jpeg"
+		}
+	},
+
+
 ];
 
 document.addEventListener("DOMContentLoaded", function(){
