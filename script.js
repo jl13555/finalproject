@@ -140,6 +140,9 @@ let pageCollection = [
 
 ];
 
+let screenWidth = window.innerWidth;
+let addButton = "";
+
 document.addEventListener("DOMContentLoaded", function(){
 	pageTitle = document.getElementById("pageName");
 	pageOutput = document.getElementById("content");
@@ -180,16 +183,15 @@ document.addEventListener("DOMContentLoaded", function(){
       }
   }
 
-  let screenWidth = window.innerWidth;
-  console.log(screenWidth);
+ 	addButtonFunc();
 
     /* Initialize Fancybox here, after all content has been generated */
     Fancybox.bind("[data-fancybox]", {
-		  Toolbar: {
+		  	Toolbar: {
 	    	display: {
 		      left: [],
 		      middle: [],
-		      right: ["close"],
+		      right: [addButton],
    			},
    		},
    		closeButton: false,
@@ -278,5 +280,14 @@ function restyle() {
 
 function randomIcon(){
 	iconNum = Math.floor(Math.random()*5);
+}
+
+function addButtonFunc(){
+	if(screenWidth<600){
+		addButton = "close";
+	}
+	else{
+		console.log(screenWidth);
+	}
 }
 
