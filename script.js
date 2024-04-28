@@ -178,7 +178,23 @@ document.addEventListener("DOMContentLoaded", function(){
       	restyle();
       	pageElement(pageCollection[i]);
       }
-    }
+  }
+
+  let screenWidth = window.innerWidth;
+  console.log(screenWidth);
+
+    /* Initialize Fancybox here, after all content has been generated */
+    Fancybox.bind("[data-fancybox]", {
+		  Toolbar: {
+	    	display: {
+		      left: [],
+		      middle: [],
+		      right: ["close"],
+   			},
+   		},
+   		closeButton: false,
+   		height: screenWidth/3,
+		});
 });
 
 function pageElement(pageElementJSON) {
@@ -233,13 +249,14 @@ function pageElement(pageElementJSON) {
 		image1.classList.add("attachedImage");
 		image1.setAttribute("id", "myImg");
 		image1.src = attachedImageJSON["image1"];
+		image1.setAttribute("data-fancybox", ""); /* Adding the data-fancybox attribute to make the library apply to them */
 		imageDiv.appendChild(image1);
 		
 		if(attachedImageJSON["image2"] != "n/a"){
 			let image2 = document.createElement("IMG");
 			image2.classList.add("attachedImage");
-			image1.setAttribute("id", "myImg");
 			image2.src = attachedImageJSON["image2"];
+			image2.setAttribute("data-fancybox", ""); /* Adding the data-fancybox attribute to make the library apply to them */
 			imageDiv.appendChild(image2);
 		}
 		titleText.appendChild(imageDiv);
