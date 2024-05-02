@@ -130,7 +130,7 @@ let pageCollection = [
 	{
 		"sectionName" : "Even If Discord’s Data is Secure…",
 		"category": "concerns",
-		"bodyText" : "Like Tencent's ownership TikTok, its stake in Discord could create an avenue of government scrutiny akin to the investigations surrounding TikTok. Just as concerns over data privacy and national security prompted hearings and regulatory actions for TikTok, similar apprehensions may arise for Discord as both platforms amass vast amounts of user data, raising questions about how it's utilized and safeguarded. As governments increasingly focus on tech companies' practices, Discord's association with Tencent may be a cause for concern.",
+		"bodyText" : "Like ByteDance's ownership TikTok, Tencent’s stake in Discord could create an avenue of government scrutiny akin to the investigations surrounding TikTok. Just as concerns over data privacy and national security prompted hearings and regulatory actions for TikTok, similar apprehensions may arise for Discord as both platforms amass vast amounts of user data, raising questions about how it's utilized and safeguarded. As governments increasingly focus on tech companies' practices, Discord's association with Tencent may be a cause for concern.",
 		"attachedImage" : {
 			"image1" : "tiktoklogo.png",
 			"image2" : "tiktok.jpeg"
@@ -140,7 +140,7 @@ let pageCollection = [
 
 ];
 
-let screenWidth = window.innerWidth;
+let width = window.innerWidth;
 let addButton = "";
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function(){
    			},
    		},
    		closeButton: false,
-   		height: screenWidth/3,
+   		height: width/3,
 		});
 });
 
@@ -283,11 +283,12 @@ function randomIcon(){
 }
 
 function addButtonFunc(){
-	if(screenWidth<600){
+	if(width<600){
 		addButton = "close";
+		console.log("close");
 	}
 	else{
-		console.log(screenWidth);
+		console.log(width);
 	}
 }
 
